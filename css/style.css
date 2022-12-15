@@ -1,0 +1,275 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.dropdown_menu{
+  margin-right: 20px;
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background: rgba(225, 225, 225, 0.534);
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+}
+.dropdown_menu ul li{
+    padding: 10px 10px 10px 0;
+}
+.dropdown_menu ul li a{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+}
+.dropdown_menu ul li a:after{
+    content:  '';
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.dropdown_menu ul li a:hover:after{
+  width: 100%;
+}
+.korinish_blog1 ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+/* .korinish_blog1{
+    margin-left: 40px;
+}
+.header_nav{
+    margin-left: 70px;
+} */
+.container{
+    max-width: 1400px;
+    height: 1000vh;
+    margin: 0 auto;
+}
+.header_nav{
+    margin: 0 200px;
+}
+.nav_blog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 222;
+}
+.nav_blog.sticky{
+    /* margin: 10px 100px; */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background: rgba(225, 225, 225, 0.534);
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
+  z-index: 222;
+}
+.nav_ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_ul1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_img{
+    width: 100px;
+    height: 90px;
+    margin-left: 80px;
+    z-index: 1;
+}
+.nav_colorblack{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 20, 67, 0.548);
+    /* opacity: .8; */
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* animation: animatsia 30s  infinite; */
+}
+/* @keyframes animatsia{
+     0%,20%{
+        background: url(../image/1.jpg)no-repeat center;
+     }
+     25%,45%{
+        background: url(../image/pexels-pixabay-236748.jpg)no-repeat center ;
+       
+     }
+     50%,70%{
+        background: url(../image/pexels-cottonbro-4621927.jpg)no-repeat center;
+       
+     }
+     75%,100%{
+        background: url(../image/3.jpg)no-repeat center ;
+     }
+} */
+.navul_li{
+    padding: 0 40px 0 50px;
+    z-index: 1;
+}
+.navul_li1{
+    padding: 0 60px 0 40px;
+    z-index: 1;
+}
+/* .uzbek{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+}
+.uzbek:hover{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px solid #000;
+} */
+.navul_li_a{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+}
+.navul_li_a:after{
+    display: block;
+    content:  '';
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: auto;
+    bottom: -10px;
+    transition: 0.3s;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+.navul_li_a:hover:after{
+    width: 100%;
+    left: auto;
+    right: auto;
+}
+.navul_li1_a{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.korinish_blog1{
+    margin-left: 60px;
+}
+/******************************************************* top  ***************************************************/
+/******************************************************* top end ***************************************************/
+/******************************************************* banner ***************************************************/
+.banner{
+    z-index:1;
+    padding-top:  300px;
+    position: absolute;
+    margin: 0 auto;
+
+}
+.banner h1{
+   font-size: 38px;
+   font-weight: 700;
+   color: #fff;
+   margin: 0 auto;
+}
+/******************************************************* banner end ***************************************************/
+
+
+/************************************************** section about us  *************************************************/
+.abouth1{
+    font-size: 72px;
+    font-weight: 900;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.abouth1:hover{
+   -webkit-text-stroke: 2px rgb(252, 0, 0);
+   color: transparent;
+   
+}
+.rang{
+    width: 270px;
+    height: 4px;
+    background: linear-gradient(45deg,  red, yellow, blue) transparent;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+.about_video{
+    width: 600px;
+    height: 400px;
+    padding-top: 50px;
+}
+.abblog{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+.about-text{
+    max-width: 550px;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+}
+.about_button{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 10px;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.about_button:hover{
+    border-radius: 20px;
+    background: linear-gradient(140deg,  red, yellow, blue) transparent;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.317), 0 6px 20px 0 rgba(0, 0, 0, 0.266);;
+}
+/************************************************** section about us end *************************************************/
+
+
+/************************************************** section statistic  *************************************************/
+
+
+/************************************************** section statistic end *************************************************/
