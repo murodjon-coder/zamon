@@ -53,12 +53,6 @@ li{
 align-items: center;
 justify-content: center;
 }
-/* .korinish_blog1{
-    margin-left: 40px;
-}
-.header_nav{
-    margin-left: 70px;
-} */
 .container{
     max-width: 1400px;
     height: 1000vh;
@@ -79,7 +73,6 @@ justify-content: center;
     z-index: 222;
 }
 .nav_blog.sticky{
-    /* margin: 10px 100px; */
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   background: rgba(225, 225, 225, 0.534);
   backdrop-filter: blur(5px);
@@ -108,7 +101,6 @@ justify-content: center;
     height: 100%;
     position: absolute;
     background: rgba(0, 20, 67, 0.548);
-    /* opacity: .8; */
 }
 nav{
     position: relative;
